@@ -1,0 +1,7 @@
+<h2> SELECT AUDI</h2>
+<ul>
+	  <% @theatre.screens.each do |screen| %> <li>
+      	<%= link_to screen.name, theatre_screen_path(id: screen.id,theatre_id: @theatre.id)%>  </li>
+      <% end %>
+</ul>
+

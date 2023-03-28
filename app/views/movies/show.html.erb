@@ -1,0 +1,17 @@
+<h1>booking successful</h1>
+
+<li>Customer Name => <%= current_customer.name %> </li>
+<li>Customer Email => <%= current_customer.email %></li>
+
+<li>Theatre Name => <%= @theatre.name %></li>
+<li>Screan  Name => <%= @screen.name%></li>
+<li>Movie  Name  => <%= @screen.movie.name %></li>
+<br>
+<%= link_to "All Customer",  customers_path %>
+<br><br>
+<%= link_to "Log out", logout_path, method: :delete %>
+
+<%#= link_to "Log out",  theatres_path %>
+
+
+

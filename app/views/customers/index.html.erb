@@ -1,0 +1,15 @@
+
+
+<h1>All customers</h1>
+<ol>
+<%  @customer.each do |customer| %>
+<li>
+<%= customer.name %> 
+<%= link_to "  Update ",edit_customer_path(customer)%>
+
+</li>
+<% end %>
+</ol>
+
+<%# if current_customer.admin? && !current_customer?(customers) %>
+<%#= link_to "delete",customer_path(@customer),method: :delete,data: { confirm: "You sure?" } %>

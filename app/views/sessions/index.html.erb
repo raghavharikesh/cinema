@@ -1,0 +1,21 @@
+<h1> log in</h1>
+<h2> welcome to bookmyshow </h2>
+
+<%= form_with(url: login_path, scope: :session, local: true) do |form| %>
+<div>
+<%= form.label :email %><br>
+<%= form.email_field :email,placeholder:"raghav@gmail.com", class: 'form-control' %>
+</div>
+
+<div>
+<%= form.label :password %><br>
+<%= form.password_field :password,placeholder:"password" %>
+</div>
+
+<div><br>
+<%= form.submit "Log in", class: "btn btn-primary" %>
+</div>
+
+<% end %>
+<br>
+<p>New user? <%= link_to "Sign up now!", sessions_new_path %></p>

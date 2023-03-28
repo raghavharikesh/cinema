@@ -1,0 +1,7 @@
+<h3>LIST OF ALL THEATRE</h3>
+<ul>
+
+	<% @theatres.each do|theatre| %> <li>
+	<%= link_to theatre.name,theatre_screens_path(theatre.id)%>  </li>
+	<% end %> 
+</ul>

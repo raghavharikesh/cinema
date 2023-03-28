@@ -1,0 +1,9 @@
+<h3> movie in audi</h3>
+<li>	
+<%#=  @screen.movie.name	%>
+<%= link_to @screen.movie.name ,theatre_screen_movie_path(theatre_id: @theatre.id, movie_id: @screen.movie.id,screen_id: @screen.id) %>
+</li>
+<%#= link_to "sign up",new_customer_path %>
+
+
+
